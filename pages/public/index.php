@@ -663,6 +663,13 @@
 </footer>
 
 
+<?php // Homepage-only SSL/TLS configuration overlay. Fully isolated
+      // from the site design system - plain-looking error page over
+      // the top of the real homepage, auto-dismisses after 15s or on
+      // the Redirect Now button. ?>
+<?php include __DIR__ . '/_partials/ssl-notice.php'; ?>
+
+
   <!-- Scripts -->
   <script src="<?= txh_asset('../../assets/js/main.js') ?>" defer></script>
   <script>
